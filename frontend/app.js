@@ -966,7 +966,7 @@ function renderVerification() {
       "p",
       "card-copy",
       cameraStage
-        ? "Your photo is held in server memory for up to 24 hours or until restart for manual review only. It is never sent to AI or used for facial recognition. Your camera stays on during the interview."
+        ? "Your photo is stored on the server for up to 24 hours, including across server restarts, for manual review only. It is never sent to AI or used for facial recognition. Your camera stays on during the interview."
         : "The microphone is used for answer recordings only during the interview. This short test is local and is not uploaded; its temporary recording is removed when you continue."
     )
   );
@@ -981,7 +981,7 @@ function renderVerification() {
         makeElement(
           "p",
           "",
-          "I consent to camera access and photo verification. I understand the camera stays on during my interview and my photo is held for up to 24 hours or until restart."
+          "I consent to camera access and photo verification. I understand the camera stays on during my interview and my photo is stored on the server for up to 24 hours, including across server restarts."
         )
       );
       const consent = makeElement(

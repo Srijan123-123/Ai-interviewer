@@ -51,7 +51,9 @@ function getSessionToken(request) {
     cookie.startsWith(`${SESSION_COOKIE}=`)
   );
   const token = sessionCookie?.slice(SESSION_COOKIE.length + 1);
-  return token && /^[0-9a-f]{64}$/i.test(token) ? token : null;
+  return token && token.length <= 4096 && /^[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+$/u.test(token)
+    ? token
+    : null;
 }
 
 function setSessionCookie(response, token) {
