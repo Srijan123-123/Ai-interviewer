@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#11131b">
+    <meta name="description" content="Analyze your resume and practice personalized technical interview questions.">
+    <title>Interview Practice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/interview-timing.js" defer></script>
+    <script src="/question-narration.js" defer></script>
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="/" aria-label="Interview Practice home">
+          <span class="brand-mark" aria-hidden="true">✳</span>
+          <span>clear<span class="brand-accent">view</span></span>
+        </a>
+        <div class="account-actions" id="account-actions" hidden>
+          <span class="account-email" id="account-email"></span>
+          <button class="logout-button" id="logout-button" type="button">Sign out</button>
+        </div>
+      </header>
+
+      <main id="app" class="main-content">
+        <section class="loading-card" aria-live="polite">
+          <span class="brand-mark" aria-hidden="true">✳</span>
+          <p>Getting your interview ready…</p>
+        </section>
+      </main>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "ai-interviewer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A local AI-interviewer practice app with a lightweight frontend and Node.js backend.",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "node --watch backend/server.js",
+    "db:check": "node backend/check-db.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.9",
+    "mammoth": "^1.9.1",
+    "mongodb": "^6.22.0",
+    "pdf-parse": "1.1.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
